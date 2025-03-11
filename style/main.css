@@ -1,0 +1,89 @@
+.header {
+    position: relative;
+    padding: 80px 20px 30px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Логотип */
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Название сайта */
+
+.site-title {
+    text-align: center;
+    margin: 0 auto 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #2d3436;
+    letter-spacing: 1.5px;
+}
+
+
+/* Навигационное меню */
+
+.main-nav {
+    text-align: center;
+}
+
+.nav-list {
+    display: inline-flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #636e72;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0984e3;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2d3436;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #0984e3;
+    font-weight: 500;
+}
