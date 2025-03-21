@@ -52,6 +52,10 @@ body {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 .nav-list {
     display: inline-flex;
     gap: 40px;
